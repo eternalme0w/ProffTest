@@ -10,9 +10,9 @@ bool isOctave(const std::string& str) {
     return regex_match(str, numRegex);
 }
 
-bool isNumber(const string& str) {
+bool isNumber(const std::string& str) {
 
-    regex numRegex(R"(^\d+$)");
+    std::regex numRegex(R"(^\d+$)");
     return regex_match(str, numRegex);
 }
 
