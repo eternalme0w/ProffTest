@@ -16,9 +16,9 @@ bool isNumber(const std::string& str) {
     return regex_match(str, numRegex);
 }
 
-bool isHex(const string& str) {
+bool isHex(const std::string& str) {
 
-    regex numRegex(R"(^(\d|[A-F])+$)");
+    std::regex numRegex(R"(^(\d|[A-F])+$)");
     return regex_match(str, numRegex);
 }
 
